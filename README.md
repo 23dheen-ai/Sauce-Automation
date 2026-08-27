@@ -27,19 +27,45 @@ https://www.saucedemo.com/
 
 ## 🏗️ Framework Architecture
 
-GitHub
-↓
-Jenkins
-↓
-Maven
-↓
-TestNG
-↓
-Cucumber
-↓
-Selenium WebDriver
-↓
-Page Object Model
+                  ┌──────────────┐
+                  │    GitHub    │
+                  └──────┬───────┘
+                         │
+                         ↓
+                  ┌──────────────┐
+                  │   Jenkins    │
+                  └──────┬───────┘
+                         │
+                         ↓
+                  ┌──────────────┐
+                  │    Maven     │
+                  └──────┬───────┘
+                         │
+                         ↓
+                  ┌──────────────┐
+                  │   TestNG     │
+                  └──────┬───────┘
+                         │
+                         ↓
+                  ┌──────────────┐
+                  │  Cucumber    │
+                  │     BDD      │
+                  └──────┬───────┘
+                         │
+                         ↓
+                Selenium WebDriver
+                         │
+                 ┌───────┴───────┐
+                 ↓               ↓
+             Page Object      Utilities
+                 │
+       ┌─────────┼──────────┐
+       ↓         ↓          ↓
+     Login    Products     Cart
+                             ↓
+                         Checkout
+                             ↓
+                       Order Success
 
 ## 📂 Project Structure
 
